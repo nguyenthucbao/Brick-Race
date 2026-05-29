@@ -121,9 +121,9 @@ namespace MarchingBytes {
 			//set instance
 			instance = this;
 			//check for duplicate names
-			CheckForDuplicatePoolNames();
+			//CheckForDuplicatePoolNames();
 			//create pools
-			CreatePools();
+			//CreatePools();
 		}
 		
 		private void CheckForDuplicatePoolNames() {
@@ -147,7 +147,7 @@ namespace MarchingBytes {
 				                     currentPoolInfo.poolSize, currentPoolInfo.fixedSize);
 
 				
-				Debug.Log("Creating pool: " + currentPoolInfo.poolName);
+				//Debug.Log("Creating pool: " + currentPoolInfo.poolName);
 				//add to mapping dict
 				poolDictionary[currentPoolInfo.poolName] = pool;
 			}

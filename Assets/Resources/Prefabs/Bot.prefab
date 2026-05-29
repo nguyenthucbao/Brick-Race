@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7308265615358157212}
   - component: {fileID: 7308265615358157213}
   - component: {fileID: -3600317692023419155}
+  - component: {fileID: -2374179494459050254}
   - component: {fileID: 7510743666779315382}
   - component: {fileID: 7014676714706861006}
   m_Layer: 8
@@ -27,6 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7308265615358157200}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -34,7 +36,6 @@ Transform:
   m_Children:
   - {fileID: 7126548001366551037}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &7308265615358157213
 CapsuleCollider:
@@ -44,8 +45,17 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7308265615358157200}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
+  serializedVersion: 2
   m_Radius: 0.5
   m_Height: 2.2928548
   m_Direction: 1
@@ -57,15 +67,51 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7308265615358157200}
-  serializedVersion: 2
+  serializedVersion: 5
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 100
+  m_LinearDamping: 0
+  m_AngularDamping: 100
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &-2374179494459050254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7308265615358157200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+  GlobalObjectIdHash: 2337732169
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!114 &7510743666779315382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,9 +124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4198cb1af3acfb4192acd789003696c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   animator: {fileID: 7308265615123947369}
   mesh: {fileID: 7126548001366551037}
-  colorIndex: 9
   meshbody: {fileID: 2224270130148527009}
   container: {fileID: 7308265615909332775}
   totalBrick: 0
@@ -90,9 +136,53 @@ MonoBehaviour:
   stairLayer:
     serializedVersion: 2
     m_Bits: 128
-  stage: {fileID: 0}
+  stageController: {fileID: 0}
+  colorIndex:
+    UpdateTraits:
+      MinSecondsBetweenUpdates: 0
+      MaxSecondsBetweenUpdates: 0
+    m_InternalValue: 0
+  currentAnimName:
+    UpdateTraits:
+      MinSecondsBetweenUpdates: 0
+      MaxSecondsBetweenUpdates: 0
+    m_InternalValue:
+      utf8LengthInBytes: 4
+      bytes:
+        offset0000:
+          byte0000: 73
+          byte0001: 100
+          byte0002: 108
+          byte0003: 101
+          byte0004: 0
+          byte0005: 0
+          byte0006: 0
+          byte0007: 0
+          byte0008: 0
+          byte0009: 0
+          byte0010: 0
+          byte0011: 0
+          byte0012: 0
+          byte0013: 0
+          byte0014: 0
+          byte0015: 0
+        byte0016: 0
+        byte0017: 0
+        byte0018: 0
+        byte0019: 0
+        byte0020: 0
+        byte0021: 0
+        byte0022: 0
+        byte0023: 0
+        byte0024: 0
+        byte0025: 0
+        byte0026: 0
+        byte0027: 0
+        byte0028: 0
+        byte0029: 0
   target: {x: 0, y: 0, z: 0}
   agent: {fileID: 7014676714706861006}
+  isRotate: 1
 --- !u!195 &7014676714706861006
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -138,19 +228,20 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7308265615909332792}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.000000029802319, y: -0.000000029802319, z: -0.000000029802319, w: 1}
   m_LocalPosition: {x: 0, y: 1.198, z: -0.684}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7126548001366551037}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7308265615742225942
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 7308265615358157212}
     m_Modifications:
     - target: {fileID: -9094585469677568977, guid: 93b6444b4be9ecc44a98a83cef570ca8, type: 3}
@@ -258,7 +349,7 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -310153274918992457, guid: 93b6444b4be9ecc44a98a83cef570ca8, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 49898679fd2065c4c856445ef8bad7e6, type: 2}
     - target: {fileID: 919132149155446097, guid: 93b6444b4be9ecc44a98a83cef570ca8, type: 3}
@@ -298,6 +389,15 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 93b6444b4be9ecc44a98a83cef570ca8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7308265615909332775}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 93b6444b4be9ecc44a98a83cef570ca8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7308265615123947369}
   m_SourcePrefab: {fileID: 100100000, guid: 93b6444b4be9ecc44a98a83cef570ca8, type: 3}
 --- !u!137 &2224270130148527009 stripped
 SkinnedMeshRenderer:
@@ -316,7 +416,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &7308265615123947369
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -330,6 +430,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1

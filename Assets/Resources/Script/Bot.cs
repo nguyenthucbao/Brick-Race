@@ -18,7 +18,7 @@ public class Bot : Character
 
     void Start()
     {
-        ChangState(new IdleState());
+        //ChangState(new IdleState());
     }
 
     public void SetDestination(Vector3 position)
@@ -36,7 +36,7 @@ public class Bot : Character
         if(!CanMove(transform.position) && totalBrick == 0 && isRotate)
         {
             isRotate = false;
-            ChangState(new IdleState());
+            //ChangState(new IdleState());
         }
     }
 
